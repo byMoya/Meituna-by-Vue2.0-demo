@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors dong (you@example.org)
+ * @date    2016-12-29 16:45:30
+ * @version $Id$
+ */
+
+.deal-detail-tags {
+	padding: .3rem 0 .2rem;
+	.tag{
+		margin-right: .1rem;
+		margin-bottom: .1rem;
+	}
+}
+
+.deal-detail-notice.font-orange{
+	color: #f90;
+	line-height: .36rem;
+}
+
+#meituan .deal-detail-shop{
+	line-height: .32rem;
+	p{
+		margin-bottom: .15rem;
+	}
+	.shop-name{
+		font-size: .32rem;
+	}
+	.shop-phone{
+		&.padding-l{
+			padding-left: .3rem;
+		}
+		.fa-phone{
+			font-size: .6rem !important;
+		}
+	}
+}
+
+.deal-detail-menu{
+	width: 100%;
+	table-layout: fixed;
+	td{
+		padding-top: .1rem;
+		padding-bottom: .1rem;
+	}
+}
+
+.comment-card{
+	.user-info{
+		background: none;
+		padding: .2rem;
+	    color: @fontColor;
+	    margin-bottom: .1rem;
+		.user-photo{
+			width: .7rem;
+			height: .7rem;
+			margin-top: .06rem;
+			border: none;
+			.user-photo-img{
+				// border-color: #f90;
+				border: none;
+			}
+		}
+		.user-account{
+			color: #f90;
+			font-size: .28rem;
+			font-style: normal;
+			padding: 0;
+		}
+		.star-range{
+			color: #333;
+			margin-top: .05rem;
+			.fa{
+				font-size: .28rem;
+			}
+			.star-label{
+				display: none !important;
+			}
+		}
+	}
+	.pics-container{
+		padding-bottom: 0 !important;
+	}
+	.article{
+		height: auto;
+		max-height: 2rem;
+		.text-conoverflow(5);
+	}
+}

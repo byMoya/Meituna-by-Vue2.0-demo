@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors dong(you@example.org)
+ * @date    2016-12-20 19:09:34
+ * @version $Id$
+ */
+#meituan{
+	header.navbar,.mint-header,.mint-header-gray{
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: @zIndexM;
+		height: 0.88rem;
+		width: 100%;
+		background-color: @mColor;
+	}
+	.mint-header,.mint-header-gray{
+		.mint-header-title{
+			font-size: .32rem;
+			line-height: .88rem;
+		}
+		.mint-header-button.is-right{
+			.fa{
+				margin-left: .32rem;
+			}
+		}
+	}
+	.mint-header-gray{
+		background: #fafafa !important;
+		color: #333 !important;
+		.mint-header-button{
+			color:@mColor;
+		}
+	}
+}
+
+.navbar{
+	display: flex;
+	width: 100%;
+    height: 0.88rem;
+    color: @wColor;
+    background: @mColor;
+    position: relative;
+    .nav-wrap-left{
+		height: 0.88rem;
+	    line-height: 0.88rem;
+	    .fa-angle-down{
+	    	font-size: .32rem;
+	    }
+	}
+	.nav-wrap-right{
+		height: 100%;
+		a{
+		    display: inline-block;
+		    height: 100%;
+		    text-align: center;
+		    width: .94rem;
+		}
+		a:last-child{
+			margin-right: .04rem;
+		}
+	}
+    .nav-city{
+    	line-height: 1;
+	    display: inline-block;
+	    vertical-align: middle;
+	    text-align: center;
+	    margin-right: .2rem;
+	    margin-left: .2rem;
+	    font-size: .32rem;
+	    white-space: nowrap;
+    }
+    .box-search{
+    	flex:1 1 auto;
+    	margin-top: 0.12rem;
+    }
+    .nav-btn{
+		margin-top: .12rem;
+    }
+}
+
+.nav-btn{
+	display: inline-block;
+    font-size: .2rem;
+    line-height: 1;
+    vertical-align: middle;
+}

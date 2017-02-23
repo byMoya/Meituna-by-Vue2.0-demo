@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-12-20 12:00:06
+ * @version $Id$
+ */
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	outline: none;
+}
+a{
+	text-decoration: none;
+	color: #666;
+}
+
+/* 清除input关闭叉号 */
+input::-webkit-search-cancel-button{
+  display: none;
+}
+input[type=search]::-ms-clear{
+  display: none;
+}
+
+/* mint ui 样式重置 */
+#meituan{
+	.mint-swipe-indicator{
+	    background: #ccc;
+    	opacity: 1;
+    	&.is-active{
+			background: @mColor;
+    	}
+	}
+}
+
+#meituan{
+	.mint-tabbar{
+		height: .98rem;
+		border-top: 1px solid #ccc;
+		box-sizing: border-box;
+		z-index: @zIndexM;
+		background-image: none;
+		.mint-tab-item{
+			height: .98rem;
+			padding: 0;
+			.mint-tab-item-icon{
+				display: none;
+				// height: .46rem;
+				// margin-bottom: .1rem;
+				// img{
+				// 	height: 100%;
+				// }
+			}
+			.item-fa{
+				height: .44rem;
+				padding: .14rem 0 .05rem;
+				.fa{
+					font-size: .44rem;
+					color: @fontColor;
+				}
+			}
+			.mint-tab-item-label{
+				font-size: .18rem;
+			}
+		}
+		.mint-tab-item.is-selected{
+			background: none;
+			*{
+				color: @mColor !important;
+			}
+		}
+	}
+}
+
+#meituan .mint-search{
+	height: .64rem;
+	// background: #c00;
+}
+
+/* page-cell */
+#meituan .page-cell{
+}
+/* mint-cell */
+#meituan .mint-cell{
+	min-height: .8rem;
+    border-bottom: 1px solid @borderColor;
+	& *{
+		font-size: .28rem;
+	}
+	.mint-cell-wrapper{
+		background-image:none;
+	}
+    .mint-cell-title{
+		.fa{
+			font-size: .32rem;
+			vertical-align: middle;
+			margin-right: .1rem;
+		    width: .32rem;
+			text-align: center;
+		}
+	}
+}
+
+/* .mint-navbar */
+#meituan{
+	.mint-navbar .mint-tab-item.is-selected {
+    	border-bottom: 3px solid @mColor;
+	    color: @mColor;
+	    margin-bottom: -3px;
+	}
+}
