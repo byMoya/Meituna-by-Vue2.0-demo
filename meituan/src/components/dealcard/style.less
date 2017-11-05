@@ -1,0 +1,68 @@
+@import '../../css/args.less';
+
+/* dealcard组件 */
+.react-dealcard{
+    padding: .28rem 0;
+}
+.dealcard, .cinemacard{
+    position: relative;
+    box-sizing: border-box;
+    padding: .28rem 0;
+    border-bottom: 1px solid @borderColor;
+    .dealcard-img{
+        position: absolute;
+        width: 1.8rem;
+        height: 1.64rem;
+        text-align: center;
+        overflow: hidden;
+    }
+    .dealcard-block-right{
+        margin-left: 2rem;
+        position: relative;
+        height: 1.64rem;
+        .price{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            del,span{
+                vertical-align: sub;
+            }
+        }
+    }
+    .dealcard-brand,.cinemacard-brand{
+        padding-top: .1rem;
+        margin-bottom: .12rem;
+        font-size: .3rem;
+        font-weight: 400;
+        color: #333;
+    }
+    .title{
+        font-size: .24rem;
+        height: .68rem;
+        margin-bottom: .16rem;
+        color: #666;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .price{
+        color: #666;
+        position: relative;
+        .strong{
+            font-size: .38rem;
+            color: #06c1ae;
+        }
+    }
+    del{
+        font-size: .24rem;
+        text-decoration: none;
+    }
+    .line-right{
+        position: absolute;
+        top: .04rem;
+        right: 0;
+        font-size: .24rem;
+    }
+}

@@ -39,7 +39,8 @@ let router = new VueRouter({
             component: function(resolve) {
                 require(['../views/home'], resolve);
             }
-        },{
+        }
+        ,{
             path:'/user',
             name:'user',
             component: function(resolve) {

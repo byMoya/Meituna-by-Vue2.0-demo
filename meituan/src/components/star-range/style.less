@@ -1,0 +1,35 @@
+@import '../../css/args.less';
+@import '../../css/base.less';
+
+/* 组件star-range */
+#meituan .star-range{
+    position: relative;
+    display: inline-block;
+    &,& *{
+        .touch-none;
+    }
+    .star-view{
+        .star-activated{
+            color: #f90;
+        }
+    }
+    .star-label{
+        color: #f90;
+        display: inline-block;
+        font-size: .32rem;
+        white-space: nowrap;
+        height: 100%;
+        line-height: 100%;
+        position: absolute;
+        top: 0;
+        left: 100%;
+    }
+    input[type='range']{
+        position: absolute;
+        top: -50%;
+        left: 0;
+        height: 200%;
+        width: 100%;
+        .opacity(0);
+    }
+}

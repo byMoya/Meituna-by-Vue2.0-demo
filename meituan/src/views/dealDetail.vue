@@ -243,7 +243,7 @@
 </template>
 
 <script>
-	import comHeader from "../components/headerPublic.vue";
+	import {headerPublic,starRange} from "../common/component.js";
 	import common from "../common/common.js";
 
 	function initStoreDispatch(){
@@ -335,7 +335,8 @@
 	    	}
 	    },
 	    components:{
-	    	comHeader:comHeader
+	    	comHeader:headerPublic,
+	    	starRange:starRange
 	    }
 	};
 </script>

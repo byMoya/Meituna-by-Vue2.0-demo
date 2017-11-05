@@ -108,7 +108,7 @@
 </template>
 
 <script>
-	import comHeader from "../components/headerSearch.vue";
+	import {headerSearch,dealcard,topBtn,timepiece} from "../common/component.js";
 	import common from "../common/common.js";
 
 	export default {
@@ -144,7 +144,10 @@
 
 	    },
 	    components:{
-	    	comHeader:comHeader
+	    	comHeader:headerSearch,
+	    	timepiece:timepiece,
+	    	dealcard:dealcard,
+	    	topBtn:topBtn
 	    }
 	};
 </script>

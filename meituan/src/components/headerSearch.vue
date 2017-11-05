@@ -45,7 +45,6 @@
         methods:{
         },
         created(){
-            debugger;
         },
         computed:{
         }
